@@ -3,9 +3,16 @@ import Link from "next/link";
 import { lusitana } from "@/app/ui/fonts";
 import AcmeLogo from "@/app/ui/acme-logo";
 import Image from "next/image";
-import { SignedOut, SignInButton } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs/server";
+import { redirect } from "next/navigation";
 
-export default function Page() {
+export default async function Page() {
+  const { userId } = await auth();
+
+  if (userId) {
+    redirect("/dashboard");
+  }
+
   return (
     <main className="flex min-h-screen flex-col p-6">
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
