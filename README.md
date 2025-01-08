@@ -3,7 +3,7 @@
 This project is a **Next.js-based dashboard application** inspired by the Acme Dashboard example from the Next.js official website. It provides a modern, responsive, and dynamic interface for managing and visualizing key metrics and data.
 
 ### Live Demo
-You can check out the live version of the application at [https://your-app-link.com](https://your-app-link.com).
+You can check out the live version of the application at [https://nextjs-dashboard-psi-flame-93.vercel.app](https://nextjs-dashboard-psi-flame-93.vercel.app/).
 
 ## Features
 
@@ -45,9 +45,10 @@ Follow these steps to set up the project locally:
 
 3. Create a `.env.local` file for environment variables:
    ```
-   NEXT_PUBLIC_API_URL=https://api.example.com
-   NEXTAUTH_SECRET=your-secret-key
-   NEXTAUTH_URL=http://localhost:3000
+   AUTH_GITHUB_ID={CLIENT_ID}
+   AUTH_GITHUB_SECRET={CLIENT_SECRET}
+   AUTH_GOOGLE_ID={CLIENT_ID}
+   AUTH_GOOGLE_SECRET={CLIENT_SECRET}
    ```
 
 4. Run the development server:
@@ -65,25 +66,6 @@ Follow these steps to set up the project locally:
 - `npm run build`: Build the application for production
 - `npm run start`: Start the production server
 - `npm run lint`: Run ESLint checks
-
-## Folder Structure
-
-```
-├── components     # Reusable UI components
-├── pages          # Next.js pages
-├── public         # Static assets
-├── styles         # Global and modular styles
-├── utils          # Utility functions
-├── hooks          # Custom React hooks
-├── services       # API and data-fetching logic
-└── .env.local     # Environment variables
-```
-
-## Customization
-
-- Modify the theme in `styles/globals.css`.
-- Update API endpoints in `services/api.js`.
-- Add or edit components in the `components` folder.
 
 ## Contributing
 
@@ -116,7 +98,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ![Dashboard Overview](public/screenshots/dashboard-overview.png)
 
 #### Responsive Design
-![Responsive Design](public/screenshots/responsive-design.png)
+![Responsive Design](public/screenshots/dashboard-overview-mobile.png)
 
 ---
 
