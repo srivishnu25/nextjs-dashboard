@@ -25,7 +25,7 @@ Follow these steps to set up the project locally:
 
 ### Prerequisites
 
-- Node.js (>= 16.x)
+- Node.js (>= 18.x)
 - npm or yarn
 
 ### Steps
