@@ -33,7 +33,7 @@ Follow these steps to set up the project locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/srivishnu25/nextjs-dashboard.git
-   cd acme-dashboard
+   cd nextjs-dashboard
    ```
 
 2. Install dependencies:
