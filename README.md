@@ -95,10 +95,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ### Screenshots
 
 #### Dashboard Overview
-![Dashboard Overview](public/screenshots/dashboard-overview.png)
+![Dashboard Overview](public/dashboard-overview.png)
 
 #### Responsive Design
-![Responsive Design](public/screenshots/dashboard-overview-mobile.png)
+![Responsive Design](public/dashboard-overview-mobile.png)
 
 ---
 
