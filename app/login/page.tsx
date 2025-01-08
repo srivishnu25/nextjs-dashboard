@@ -7,9 +7,11 @@ import { Button } from "../ui/button";
 
 const SIGNIN_ERROR_URL = "/auth/error";
 
-export default function LoginPage(props: {
-  searchParams: { callbackUrl: string | undefined };
+export default async function LoginPage(props: {
+  searchParams?: Promise<{ callbackUrl?: string }>;
 }) {
+  const searchParams = await props.searchParams;
+  const callbackUrl = searchParams?.callbackUrl || "/dashboard";
   return (
     <main className="flex items-center justify-center md:h-screen">
       <div className="relative mx-auto flex w-full max-w-[400px] flex-col space-y-2.5 p-4 md:-mt-32">
@@ -27,7 +29,7 @@ export default function LoginPage(props: {
                 "use server";
                 try {
                   await signIn(provider.id, {
-                    redirectTo: props.searchParams?.callbackUrl ?? "/dashboard",
+                    redirectTo: callbackUrl,
                   });
                 } catch (error) {
                   // Signin can fail for a number of reasons, such as the user
